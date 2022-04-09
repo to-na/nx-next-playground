@@ -11,13 +11,13 @@ type FooBarDomProps = {
 const FooBarStyle = styled.div``;
 
 const FooBarDom: React.VFC<FooBarDomProps> = (props) => (
-  <FooBarStyle>Code Presentational Component</FooBarStyle>
+  <FooBarStyle>Code Your Component</FooBarStyle>
 );
 
 const FooBar: React.VFC<FooBarProps> = (props) => {
   // Code Container Logic
   const domProps = props;
-  return <FooBarDom {...domProps}>Code DOM layer</FooBarDom>;
+  return <FooBarDom {...domProps}>Code Your Component</FooBarDom>;
 };
 
 export default FooBar;
