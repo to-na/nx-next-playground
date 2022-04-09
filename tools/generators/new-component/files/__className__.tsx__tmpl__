@@ -1,0 +1,23 @@
+import React from 'react';
+import { styled } from '@compiled/react';
+
+type <%=className%>Props = {
+  prop1: string;
+};
+type <%=className%>DomProps = {
+  prop1: string;
+};
+
+const <%=className%>Style = styled.div``;
+
+const <%=className%>Dom: React.VFC<<%=className%>DomProps> = (props) => (
+  <<%=className%>Style>Code Presentational Component</<%=className%>Style>
+);
+
+const <%=className%>: React.VFC<<%=className%>Props> = (props) => {
+  // Code Container Logic
+  const domProps = props;
+  return <<%=className%>Dom {...domProps}>Code DOM layer</<%=className%>Dom>;
+};
+
+export default <%=className%>;
