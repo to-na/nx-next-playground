@@ -11,13 +11,13 @@ type <%=className%>DomProps = {
 const <%=className%>Style = styled.div``;
 
 const <%=className%>Dom: React.VFC<<%=className%>DomProps> = (props) => (
-  <<%=className%>Style>Code Presentational Component</<%=className%>Style>
+  <<%=className%>Style>Code Your Component</<%=className%>Style>
 );
 
 const <%=className%>: React.VFC<<%=className%>Props> = (props) => {
   // Code Container Logic
   const domProps = props;
-  return <<%=className%>Dom {...domProps}>Code DOM layer</<%=className%>Dom>;
+  return <<%=className%>Dom {...domProps}>Code Your Component</<%=className%>Dom>;
 };
 
 export default <%=className%>;
